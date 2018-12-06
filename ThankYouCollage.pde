@@ -15,11 +15,6 @@ fill (255);
     text ("0", 780, 135);
     text ("0", 945, 135);
     
-    if (mouseY<20 == mouseX<20) {
-    img = loadImage ("thankyouedit.png");
-    image (img, 20, 20, height/3, width/5);
-    }
-    
 }
 
 
@@ -28,6 +23,11 @@ void draw () {
  frameRate (200);
  
   if (mouseY<20 == mouseX<20) {
+    img = loadImage ("thankyouedit.png");
+    image (img, 20, 20, height/3, width/5);
+    }
+    
+    if (mouseY<20 == mouseX<20) {
     img = loadImage ("thankyouedit.png");
     image (img, 20, 20, height/3, width/5);
     }
