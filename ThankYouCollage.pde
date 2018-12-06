@@ -3,7 +3,7 @@ PImage img;
 void setup () {
 background (255);
 size (1000, 1000);
-img = loadImage ("score board.png");
+img = loadImage ("scoreboard.png");
 image (img, 660, 0, width/3, height/5);
 
 img = loadImage ("fightone.png");
