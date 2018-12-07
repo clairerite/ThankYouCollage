@@ -1,3 +1,10 @@
+/* @pjs preload = "scoreboard.png"; */
+/* @pjs preload = "fightone.png"; */
+/* @pjs preload = "redside.png"; */
+/* @pjs preload = "blueside.png"; */
+/* @pjs preload = "medal.png"; */
+/* @pjs preload = "thankyouedit.png"; */
+/* @pjs preload = "supportingme.png"; */
 PImage img;
 
 void setup () {
