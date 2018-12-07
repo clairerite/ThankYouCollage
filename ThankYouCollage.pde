@@ -12,9 +12,11 @@ void setup () {
 /* @pjs preload = "scoreboard.png"; */
 background (255);
 size (1000, 1000);
+/* @pjs preload = "scoreboard.png"; */
 img = loadImage ("scoreboard.png");
 image (img, 660, 0, width/3, height/5);
 
+/* @pjs preload = "fightone.png"; */
 img = loadImage ("fightone.png");
 image (img, 500, 200, width/2, height/2);
 
@@ -32,11 +34,7 @@ void draw () {
  frameRate (200);
  
   if (mouseY<20 == mouseX<20) {
-    img = loadImage ("thankyouedit.png");
-    image (img, 20, 20, height/3, width/5);
-    }
-    
-    if (mouseY<20 == mouseX<20) {
+    /* @pjs preload = "thankyouedit.png"; */
     img = loadImage ("thankyouedit.png");
     image (img, 20, 20, height/3, width/5);
     }
@@ -59,6 +57,7 @@ void draw () {
     
     
     if (mouseX<20 == mouseY>800) {
+    /* @pjs preload = "supportingme.png"; */
       img = loadImage ("supportingme.png");
       image (img, 20, 500, width/3, height/3);
     }  
