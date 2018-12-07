@@ -8,15 +8,11 @@
 PImage img;
 
 void setup () {
-/* @pjs preload = "fightone.png"; */
-/* @pjs preload = "scoreboard.png"; */
 background (255);
 size (1000, 1000);
-/* @pjs preload = "scoreboard.png"; */
 img = loadImage ("scoreboard.png");
 image (img, 660, 0, width/3, height/5);
 
-/* @pjs preload = "fightone.png"; */
 img = loadImage ("fightone.png");
 image (img, 500, 200, width/2, height/2);
 
@@ -34,7 +30,6 @@ void draw () {
  frameRate (200);
  
   if (mouseY<20 == mouseX<20) {
-    /* @pjs preload = "thankyouedit.png"; */
     img = loadImage ("thankyouedit.png");
     image (img, 20, 20, height/3, width/5);
     }
@@ -57,14 +52,12 @@ void draw () {
     
     
     if (mouseX<20 == mouseY>800) {
-    /* @pjs preload = "supportingme.png"; */
       img = loadImage ("supportingme.png");
       image (img, 20, 500, width/3, height/3);
     }  
  
   if (keyPressed) {
     if (key == '1') {
-     /* @pjs preload = "redside.png"; */
      img = loadImage ("redside.png");
     image (img, 700, 0, width/8, height/5);
       fill (255);
@@ -74,7 +67,6 @@ void draw () {
     
     }
     if (key == 'q' || key == 'Q') {
-      /* @pjs preload = "blueside.png"; */
       img = loadImage ("blueside.png");
       image (img, 860, 5, width/8, height/5.5);
       fill (255);
@@ -83,7 +75,6 @@ void draw () {
       text ("1", 945, 135);
     }
     if (key == 'w' || key == 'W') {
-    /* @pjs preload = "blueside.png"; */
       img = loadImage ("blueside.png");
       image (img, 860, 5, width/8, height/5.5);
       fill (255);
@@ -92,7 +83,6 @@ void draw () {
       text ("2", 945, 135);
     }
     if (key == 'E' || key == 'e') {
-    /* @pjs preload = "blueside.png"; */
       img = loadImage ("blueside.png");
       image (img, 860, 5, width/8, height/5.5);
       fill (255);
@@ -101,7 +91,6 @@ void draw () {
       text ("3", 945, 135);
     }
      if (key == '2') {
-     /* @pjs preload = "redside.png"; */
     img = loadImage ("redside.png");
     image (img, 700, 0, width/8, height/5);
       fill (255);
@@ -110,14 +99,12 @@ void draw () {
     text ("2", 780, 135);
     }
      if (key == '3') {
-     /* @pjs preload = "redside.png"; */
     img = loadImage ("redside.png");
     image (img, 700, 0, width/8, height/5);
       fill (255);
     textAlign (RIGHT);
     textSize (110);
     text ("3", 780, 135);
-     /* @pjs preload = "medal.png"; */
      img = loadImage ("medal.png");
       image (img, 280, 300, height/5, width/4);
     
