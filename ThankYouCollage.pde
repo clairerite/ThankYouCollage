@@ -5,16 +5,23 @@
 /* @pjs preload = "medal.png"; */
 /* @pjs preload = "thankyouedit.png"; */
 /* @pjs preload = "supportingme.png"; */
-PImage img;
+PImage score;
+PImage fight;
+PImage red;
+PImage blue;
+PImage support;
+PImage medal;
+PImage thanks;
+
 
 void setup () {
 background (255);
 size (1000, 1000);
-img = loadImage ("scoreboard.png");
-image (img, 660, 0, width/3, height/5);
+score = loadImage ("scoreboard.png");
+image (score, 660, 0, width/3, height/5);
 
-img = loadImage ("fightone.png");
-image (img, 500, 200, width/2, height/2);
+fight = loadImage ("fightone.png");
+image (fight, 500, 200, width/2, height/2);
 
 fill (255);
     textAlign (RIGHT);
@@ -30,8 +37,8 @@ void draw () {
  frameRate (200);
  
   if (mouseY<20 == mouseX<20) {
-    img = loadImage ("thankyouedit.png");
-    image (img, 20, 20, height/3, width/5);
+    thanks = loadImage ("thankyouedit.png");
+    image (thanks, 20, 20, height/3, width/5);
     }
     
   noStroke ();
@@ -52,14 +59,14 @@ void draw () {
     
     
     if (mouseX<20 == mouseY>800) {
-      img = loadImage ("supportingme.png");
-      image (img, 20, 500, width/3, height/3);
+      support = loadImage ("supportingme.png");
+      image (support, 20, 500, width/3, height/3);
     }  
  
   if (keyPressed) {
     if (key == '1') {
-     img = loadImage ("redside.png");
-    image (img, 700, 0, width/8, height/5);
+     red = loadImage ("redside.png");
+    image (red, 700, 0, width/8, height/5);
       fill (255);
     textAlign (RIGHT);
     textSize (110);
@@ -67,46 +74,46 @@ void draw () {
     
     }
     if (key == 'q' || key == 'Q') {
-      img = loadImage ("blueside.png");
-      image (img, 860, 5, width/8, height/5.5);
+      blue = loadImage ("blueside.png");
+      image (blue, 860, 5, width/8, height/5.5);
       fill (255);
       textAlign (RIGHT);
       textSize (110);
       text ("1", 945, 135);
     }
     if (key == 'w' || key == 'W') {
-      img = loadImage ("blueside.png");
-      image (img, 860, 5, width/8, height/5.5);
+      blue = loadImage ("blueside.png");
+      image (blue, 860, 5, width/8, height/5.5);
       fill (255);
       textAlign (RIGHT);
       textSize (110);
       text ("2", 945, 135);
     }
     if (key == 'E' || key == 'e') {
-      img = loadImage ("blueside.png");
-      image (img, 860, 5, width/8, height/5.5);
+      blue = loadImage ("blueside.png");
+      image (blue, 860, 5, width/8, height/5.5);
       fill (255);
       textAlign (RIGHT);
       textSize (110);
       text ("3", 945, 135);
     }
      if (key == '2') {
-    img = loadImage ("redside.png");
-    image (img, 700, 0, width/8, height/5);
+    red = loadImage ("redside.png");
+    image (red, 700, 0, width/8, height/5);
       fill (255);
     textAlign (RIGHT);
     textSize (110);
     text ("2", 780, 135);
     }
      if (key == '3') {
-    img = loadImage ("redside.png");
-    image (img, 700, 0, width/8, height/5);
+    red = loadImage ("redside.png");
+    image (red, 700, 0, width/8, height/5);
       fill (255);
     textAlign (RIGHT);
     textSize (110);
     text ("3", 780, 135);
-     img = loadImage ("medal.png");
-      image (img, 280, 300, height/5, width/4);
+     medal = loadImage ("medal.png");
+      image (medal, 280, 300, height/5, width/4);
     
     }
     
