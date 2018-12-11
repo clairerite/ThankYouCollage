@@ -17,9 +17,14 @@ PImage thanks;
 void setup () {
 background (255);
 size (1000, 1000);
-score = loadImage ("scoreboard.png");
 
+score = loadImage ("scoreboard.png");
 fight = loadImage ("fightone.png");
+thanks = loadImage ("thankyouedit.png");
+support = loadImage ("supportingme.png");
+red = loadImage ("redside.png");
+blue = loadImage ("blueside.png");
+
 
 fill (255);
     textAlign (RIGHT);
@@ -37,7 +42,7 @@ image (fight, 500, 200, width/2, height/2);
  frameRate (200);
  
   if (mouseY<20 == mouseX<20) {
-    thanks = loadImage ("thankyouedit.png");
+   
     image (thanks, 20, 20, height/3, width/5);
     }
     
@@ -59,13 +64,13 @@ image (fight, 500, 200, width/2, height/2);
     
     
     if (mouseX<20 == mouseY>800) {
-      support = loadImage ("supportingme.png");
+      
       image (support, 20, 500, width/3, height/3);
     }  
  
   if (keyPressed) {
     if (key == '1') {
-     red = loadImage ("redside.png");
+     
     image (red, 700, 0, width/8, height/5);
       fill (255);
     textAlign (RIGHT);
@@ -74,7 +79,6 @@ image (fight, 500, 200, width/2, height/2);
     
     }
     if (key == 'q' || key == 'Q') {
-      blue = loadImage ("blueside.png");
       image (blue, 860, 5, width/8, height/5.5);
       fill (255);
       textAlign (RIGHT);
@@ -82,7 +86,6 @@ image (fight, 500, 200, width/2, height/2);
       text ("1", 945, 135);
     }
     if (key == 'w' || key == 'W') {
-      blue = loadImage ("blueside.png");
       image (blue, 860, 5, width/8, height/5.5);
       fill (255);
       textAlign (RIGHT);
@@ -90,7 +93,6 @@ image (fight, 500, 200, width/2, height/2);
       text ("2", 945, 135);
     }
     if (key == 'E' || key == 'e') {
-      blue = loadImage ("blueside.png");
       image (blue, 860, 5, width/8, height/5.5);
       fill (255);
       textAlign (RIGHT);
@@ -98,7 +100,6 @@ image (fight, 500, 200, width/2, height/2);
       text ("3", 945, 135);
     }
      if (key == '2') {
-    red = loadImage ("redside.png");
     image (red, 700, 0, width/8, height/5);
       fill (255);
     textAlign (RIGHT);
@@ -106,13 +107,11 @@ image (fight, 500, 200, width/2, height/2);
     text ("2", 780, 135);
     }
      if (key == '3') {
-    red = loadImage ("redside.png");
     image (red, 700, 0, width/8, height/5);
       fill (255);
     textAlign (RIGHT);
     textSize (110);
     text ("3", 780, 135);
-     medal = loadImage ("medal.png");
       image (medal, 280, 300, height/5, width/4);
     
     }
