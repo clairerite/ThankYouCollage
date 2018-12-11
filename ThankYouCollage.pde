@@ -18,10 +18,8 @@ void setup () {
 background (255);
 size (1000, 1000);
 score = loadImage ("scoreboard.png");
-image (score, 660, 0, width/3, height/5);
 
 fight = loadImage ("fightone.png");
-image (fight, 500, 200, width/2, height/2);
 
 fill (255);
     textAlign (RIGHT);
@@ -33,6 +31,8 @@ fill (255);
 
 
 void draw () {
+image (score, 660, 0, width/3, height/5);
+image (fight, 500, 200, width/2, height/2);
   
  frameRate (200);
  
